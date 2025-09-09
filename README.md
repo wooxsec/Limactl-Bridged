@@ -1,12 +1,12 @@
 # Lima (limactl) — Bridged Networking di macOS (step‑by‑step)
 
-Panduan singkat bahasa Indonesia untuk membuat instance Lima (`limactl`) mendapatkan IP sendiri di LAN menggunakan **`socket_vmnet`**. Tutorial ini merangkum langkah yang saya lakukan (install, konfigurasi, troubleshooting) sehingga kamu bisa copy‑paste dan pakai sendiri.
+Untuk membuat instance Lima (`limactl`) mendapatkan IP sendiri di LAN menggunakan **`socket_vmnet`**. Tutorial ini merangkum langkah yang saya lakukan (install, konfigurasi, troubleshooting)
 
 ---
 
 ## Ringkasan
 
-Tujuannya: agar VM Lima tampil sebagai perangkat nyata di jaringan lokal (mendapat IP seperti `192.168.8.x`), bukan hanya lewat NAT/port‑forward dari host.
+Tujuan: agar VM Lima tampil sebagai perangkat real di jaringan lokal (mendapat IP seperti `192.168.8.x`), bukan hanya lewat NAT/port‑forward dari host.
 
 Komponen utama:
 
@@ -75,12 +75,12 @@ Buka file tersebut (gunakan `sudo` jika perlu) dan ubah/isi menjadi:
 
 ```yaml
 paths:
-  socketVMNet: /opt/homebrew/Cellar/socket_vmnet/1.2.1/bin/socket_vmnet
+  socketVMNet: /opt/socket_vmnet/bin/socket_vmnet
 
 networks:
   bridged:
     mode: bridged
-    interface: en0   # ganti sesuai interface fisik (cek ifconfig)
+    interface: en0   # ganti sesuai interface lan (cek ifconfig)
 ```
 
 > Penting: `socketVMNet` harus menunjuk langsung ke binary di `Cellar` — bukan ke `/opt/homebrew/opt/...` jika itu symlink.

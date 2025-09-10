@@ -1,7 +1,9 @@
 # Lima (limactl) — Bridged Networking di macOS (step‑by‑step)
-## 🎥 Demo Tutorial
 
-<video src="lima.mp4" controls width="700"></video>
+## 🎥 Demo 
+
+👉 [TestDemo]([https://github.com/<username>/<repo>/blob/main/lima.mp4](https://github.com/wooxsec/Limactl-Bridged/raw/refs/heads/main/lima.mp4)?raw=true)
+
 
 Untuk membuat instance Lima (`limactl`) mendapatkan IP sendiri di LAN menggunakan **`socket_vmnet`**. Tutorial ini merangkum langkah yang saya lakukan (install, konfigurasi, troubleshooting)
 

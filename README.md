@@ -1,7 +1,7 @@
 # Lima (limactl) — Bridged Networking macOS
 
 
-Untuk membuat instance Lima (`limactl`) mendapatkan IP sendiri di LAN menggunakan **`socket_vmnet`**. Tutorial ini merangkum langkah yang saya lakukan (install, konfigurasi, troubleshooting)
+Untuk membuat instance Lima (`limactl`) mendapatkan IP sendiri di LAN menggunakan **`socket_vmnet`**.
 
 ---
 

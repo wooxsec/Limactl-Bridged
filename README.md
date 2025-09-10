@@ -242,7 +242,7 @@ sudo netplan apply
 
 ---
 
-## Contoh masalah & solusinya (kasus nyata dari tutorial ini)
+## Case masalah & solusinya 
 
 * Error `paths.socketVMNet is a symlink` → copy binary ke `/opt/socket_vmnet/bin/`.
 * Error `can't read "/private/etc/sudoers.d/lima"` → jalankan `limactl sudoers` dan install file sudoers di `/private/etc/sudoers.d/`.
